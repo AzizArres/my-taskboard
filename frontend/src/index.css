@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Outfit:wght@100..900&display=swap');
+*{
+  padding:  0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  min-width: 500px;
+  width: 50%;
+  margin: 50px 0;
+  z-index: 1;
+}
+
+.board{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.board div, .board button{
+  width: 100%;
+  min-height: 60px;
+  border-radius: 9px;
+  padding: 20px
+}
+
+.task-in-progress{
+  background-color: #F5D565;
+}
+
+.task-completed{
+  background-color: #A0ECB1;
+}
+
+.task-wont-do{
+  background-color: #F8C2C2;
+}
+
+.task-to-do{
+  background-color: #E3E8EF;
+}
+
+.add-task{
+  background-color: #F5E8D5;
+  outline: none;
+  border: none;
+  font-size: 18px;
+}
+
+.task-title{
+  font-size: 23px;
+}
+
+.task-description{
+  font-size: 14px;
+  font-weight: light;
+}
+
+.section-title{
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.unique-task{
+  border: 2px solid black;
+  margin: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.board .edit-button, .board .delete-button{
+  height: 30px;
+  width: 90px;
+  text-align: center;
+  font-size: 16px;
+  margin: 5px;
+}
+
+button, .section-title{
+  cursor: pointer;
+}
+
+.add-new-task-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  margin: 50px 25%;
+}
+
+.title-and-cancel{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.title-and-cancel img{
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.new-task-section, .task-edit{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-direction: column;
+}
+
+.new-task-section label, .task-edit label{
+  font-size: 16px;
+}
+
+.new-task-section input, .task-edit input{
+  width: 400px;
+  padding: 5px;
+  margin: 5px 0;
+}
+
+.new-task-section .new-task-name{
+  height: 50px;
+  font-size: 20px;
+}
+
+.new-task-section textarea, .task-edit textarea{
+  font-size: 14px;
+  padding: 5px;
+}
+
+.add-new-task-section .buttons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-new-task-section div, .task-edit div{
+  margin: 15px 0;
+}
+
+.add-new-task-section .buttons input, .add-new-task-section .buttons button{
+  width: 150px;
+  cursor: pointer;
+  height: 50px;
+}
+
+.yes, .no{
+  display: flex;
+  text-align: center;
+  gap: 3px;
+}
+
+.yes input, .no input{
+  cursor: pointer;
+}
+
+.date{
+  font-size: 10px;
+}
+
+.hide{
+  display: none;
+}
